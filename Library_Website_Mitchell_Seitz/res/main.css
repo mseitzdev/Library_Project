@@ -1,0 +1,202 @@
+/*
+
+  main.css
+  Programmed by mitchell seitz , feb 2024
+
+  This is the css formatting code for most of the website.
+
+*/
+
+/*General formatting */
+* {
+  /* This allows elements to reach the edge of the screen*/
+  padding:0;
+  margin:0;
+  /*Setting font family to arial for cross-browser consistency*/
+  font-family: Arial;
+}
+
+/*CSS style for the logo + it's homepage link */
+.homeLogo{
+  /* 
+  Maxes out the link dimensions 
+  to allow the logo css to work 
+  */
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  /* Adjusting width, height, and position on screen */
+  max-width: 70%; 
+  width: auto; 
+  height: 75px;
+  transform: translateX(-10%);
+  /* Prevents image from squishing, auto adjust to screen */
+  object-fit: contain;
+}
+.logo:hover{
+  transition: 0.25s;
+  /* 
+  disabled color change on the logo because it's terrible on safari. 
+  */
+  /* filter: brightness(10) grayscale(100%); */
+  transform: translatex(-10%) scale(1.05);
+  cursor: pointer;
+}
+
+/* This is the standard paragraph CSS for most pages */
+.paragraphStandard{
+  font-size: 19px; 
+  text-align: left;
+}
+
+/* Styling our form buttons */
+.formButton{
+  font-size: 20px; 
+  background-color: goldenrod;
+  border: 2px solid lightgoldenrodyellow;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 2px;
+}
+/*Changing form button appearance on hover */
+.formButton:hover{
+  cursor: pointer;
+  transition: 0.25s;
+  transform: scale(1.05);
+}
+
+/*CSS for our links*/
+a{
+  color: goldenrod;
+  text-decoration: none;
+}
+/*Changing link appearance on hover */
+a:hover{
+  color: lightgoldenrodyellow;
+  cursor: pointer;
+}
+/*This won't work on a:hover, add class to wrapper*/
+.zoomLink:hover{
+  transition: 0.25s;
+  transform: scale(1.05);
+}
+
+/*Table Borders*/
+table, th, td {
+  border: 1px solid;
+}
+th, td {
+  padding: 3px;
+  max-width: 10%;
+}
+
+/* This is the formatting for our header, at the top of the page. */
+header{
+  
+  /* 
+  This sets the background color and opacity
+  without inheritance issues 
+  color: 111, aka light black
+  Opacity : 0.8, 80%
+  */
+  background-color: rgba(1,1,1,0.85);
+
+  /* The padding-direction css allows for some padding to be inserted around elements*/
+  padding-left: 1%;
+  padding-right: 1%; 
+  padding-bottom: 1px;
+  padding-top: 1px;
+
+  /* Setting dimensions */
+  width: 100%;
+  max-height: 80px;
+
+  /*Toggle for scrollability*/
+  position: fixed;
+
+}
+
+/* General body formatting */
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+
+/*Main formatting - creating the central area to display contents*/
+main{
+
+  /*Padding the main - prevents overlap with footer or top.*/
+  /*
+  padding-left: 15%;
+  padding-right: 15%;
+  */
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  /* showing the background and organizing contents*/
+  margin-left: 1%;
+  margin-right: 1%;
+
+  min-height: 50vh;
+
+  /*font in main*/
+  color: lightgoldenrodyellow;
+}
+
+/*Formatting for boxes surrounding contents*/
+.mainbox{
+
+  /*creates rounded border edges*/
+  border-radius: 25px;
+
+  /*Background color- matches footer and header.*/
+  background-color: rgba(1,1,1,0.85);
+
+  /*Padding the edges */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  /*Font size */
+  font-size: 21px; 
+}
+
+/* Formatting for page titles */
+.pagetitle{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* copyright on hover */
+.copyright:hover{
+  transition: 0.25s;
+  color: lightgoldenrodyellow;
+  cursor: not-allowed;
+}
+
+/*Formatting for the footer at the bottom of the page*/
+footer{
+  /* This code can make the footer cling to the bottom of the page */
+  /* Taken from w3schools, https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+  position: fixed; /* Toggle for scroll or fixed */
+
+  /*Dimensions*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  /*design*/
+  background-color: rgba(1,1,1,0.85);
+  color: goldenrod;
+  text-align: center;
+
+  /*Footer padding*/
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
