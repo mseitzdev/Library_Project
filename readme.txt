@@ -2,6 +2,12 @@ Coding Project - Second Bind Software Development Challenge
 
 Created by Mitchell Seitz, Nov 2024
 
+Video Demonstration:
+https://www.youtube.com/watch?v=6CfMlTaB5BQ&ab_channel=A
+
+Source Code: 
+https://github.com/mseitzdev/Library_Project
+
 ____________________________________________________________________________________________
 
 Description:
