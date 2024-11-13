@@ -91,9 +91,6 @@ Library_Website_Mitchell_Seitz (Folder) - Main folder, contains program files.
                    pulls the list information out of the session, turns it into JSON, and 
                    downloads on the client machine. 
 
-	errorPage.php - This page is the error page for the program, and will be redirected to if
-                    operations such as database access fail. 
-
 	res (Folder) - This is the folder containing elements that are constant on every page. 
 
 		menu.php - This is the menu program, which constructs a menu using JavaScript, PHP, 
